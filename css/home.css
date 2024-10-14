@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.titleimage{
+    background-image: url("../images/head.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    background-attachment: fixed;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+    animation: load 0,5s;
+}
+
+.titleimage .title{
+    width: 1800px;
+    height: 900px;
+    padding-top:360px;
+    padding-left:420px;
+    font-size: 70px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    color: rgba(232, 192, 158, 0.99);
+}
+
+.main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.sec{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.pt{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    float: left;
+    margin: 120px 0px 0px 120px;
+    background-color: rgb(255 240 246 / 80%);
+    box-shadow: 0 0 15px rgb(4 5 6);
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+
+.pt:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imghid{
+    overflow: hidden;
+}
+
+.part1 .img{
+    background-image: url("../images/homepic1.png");
+}
+
+.part2 .img{
+    background-image: url("../images/homepic2.png");
+}
+
+.part3 .img{
+    background-image: url("../images/homepic3.png");
+}
+
+.part4 .img{
+    background-image: url("../images/homepic4.png");
+}
+
+.pt .img{
+    height: 190px;
+    width: 250px;
+    background-size: cover;
+    background-position: 0px -30px;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+.pt .txt{
+    height: 310px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.pt .txt h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(207 139 139);
+    height: 30px;
+    line-height: 30px;
+}
+
+.pt .txt p {
+    text-align: center;
+    margin-top: -4px;
+    word-wrap: break-word;
+    color: rgb(255 129 137);
+}
+@keyframes load{
+    0%{
+        background-position-y: 50px;
+        opacity: 0;
+    }
+    100%{
+        background-position-y: 0px;
+        opacity: 1;
+    }
+}

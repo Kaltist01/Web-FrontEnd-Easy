@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="back" id="back">
+        <div class="log" id="log">
+            <div class="logtitle">LOGIN</div><p></p>
+            <form action="home.html" id="logbody" class="logbody" onsubmit="return login()">
+                <input type="text" id="zh" size="20" class="txt" placeholder="账户">
+                <br>
+                <input type="password" id="mm" size="20" class="txt" placeholder="密码">
+                <br>
+                <input type="submit" value="登录" id="sub" class="sub">
+                <a href="home.html"><input type="button" value="游客登录" id="ykbt" class="ykbt"></a>
+            </form>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

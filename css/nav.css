@@ -1,0 +1,99 @@
+@charset "uft-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1700px;
+    height: 70px;
+    top: 0px;
+    background-color:  rgb(235, 198, 138);
+    overflow:hidden;
+    font-size: 20px;
+    color: rgb(234, 247, 255);
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.homenav{
+    animation: load2 1s linear;
+}
+
+nav:hover{
+    opacity:0.95;
+}
+
+nav .navtitle{
+    padding-left: 50px;
+    width:30%;
+}
+
+nav .navtitle strong{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+nav a{
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    height: inherit;
+    line-height: 70px;
+   width: 120px;
+   text-align: center;
+   font-weight: bolder;
+   color: rgb(255 255 255);
+   transition: 0.5s;
+}
+
+nav .navanim{
+    position: absolute;
+    height: inherit;
+    z-index: 0;
+    background: rgb(244, 118, 79);
+    border-radius: 5px;
+    left: 0px;
+    transition:  all .5s ease 0s;
+    width: 120px;
+}
+
+nav .home,a:nth-child(2):hover~.navanim{
+    width: 120px;
+    left: 640px;
+}
+
+nav .about,a:nth-child(3):hover~.navanim{
+    width: 120px;
+    left: 810px;
+}
+
+nav .blog,a:nth-child(4):hover~.navanim{
+    width: 120px;
+    left: 980px;
+}
+
+nav .join,a:nth-child(5):hover~.navanim{
+    width: 120px;
+    left: 1160px;
+}
+
+
+nav .none{
+    width: 20%;
+}
+
+@keyframes load2{
+    0%{
+        top: -80px;
+        opacity: 0;
+    }100%{
+        top: 0px;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+.mid{
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.headimg{
+    top: 0px;
+    height: 250px;
+    width: 100%;
+    background-image: url("../images/headimg2.jpg");
+    background-size: 1700px;
+    background-repeat: no-repeat;
+    background-position-y: -260px;
+    background-position-x: -20px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(255, 87, 26);
+    animation: headload 0.9s linear;
+}
+.headimg h1{
+    color: rgb(255, 167, 141);
+    font-size: 5em;
+    text-align: center;
+    line-height: 200px;
+    -webkit-text-stroke: 1px rgb(66, 9, 9);
+}
+
+.mid .ab{
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 0 15px rgb(45, 53, 56);
+    background:  rgb(235, 198, 138,0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.out1 .img{
+    background-image: url("../images/about1.jpg");
+}
+.out2 .img{
+    background-image: url("../images/about2.jpg");
+}
+.out3 .img{
+    background-image: url("../images/about3.jpg");
+}
+
+.ab p{
+    font-size: 20px;
+    font-weight: 10px;
+    word-wrap: break-word;
+    color: rgb(71, 66, 57);
+    line-height: 24px;
+}
+
+.ab .txt{
+    width: 400px;
+    margin: 0 20px 0 20px;
+}
+
+.ab h2{
+    text-align: center;
+    color: rgb(203, 106, 71);
+}
+.ab .img {
+    width: 360px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.3);
+    opacity: 0.8;
+    transition: all 0.5s ease 0s;
+}
+.ab .img:hover{
+    transform: scale(1.1);
+}
+.ab .imghid{
+    overflow: hidden;
+}
+.out1{
+    margin-left: 40%;
+    animation: a1load 2.5s linear;
+    transition: 0.5s  1s;
+}
+.out2{
+    margin-left: 10%;
+    animation: a2load 3.6s linear;
+    transition: 0.5s;
+}
+.out3{
+    margin-left: 40%;
+    animation: a3load 4.8s linear;
+    transition: 0.5s;
+}
+.out3 h2 {
+    margin-top: 80px;
+    line-height: 10px;
+}
+
+@keyframes a1load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+
+@keyframes a2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes headload{
+    0%{
+        height: 0px;
+    }
+    70%{
+        height:200px;
+    }
+    100%{
+        height: 240px;
+    }
+}
